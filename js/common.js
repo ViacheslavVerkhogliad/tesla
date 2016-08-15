@@ -12,6 +12,7 @@ $(document).ready(function() {
 		$(".left_side").toggleClass("active");
 
 	});
+	/* */
 
 	$(".gallery img").lazyload({
 		effect : "fadeIn",
