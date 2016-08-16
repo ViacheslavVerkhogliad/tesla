@@ -280,8 +280,19 @@ body textarea:required:valid {
 .gallery img {
 	display: block;
 	max-width: 100%;
+	-webkit-transitioall: all 6s;
+	-moz-transition: all 6s;
+	-o-transition: all 6s;
+	transition: all 6s;
 }
 
+.gallery img:hover {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+}
 .left_side.active + .content {
 	left: 250px;
 	-webkit-transition: all .5s;
@@ -292,4 +303,12 @@ body textarea:required:valid {
 }
 
 
-
+.filter_items {
+	position: fixed;
+	bottom: 0;
+	color: #ffffff;
+	right: 0;
+	text-align: right;
+	width: 100%;
+	padding: 10px 10px 0;
+}
