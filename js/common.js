@@ -17,7 +17,6 @@ $(document).ready(function() {
 
 
 
-/*
 	$(".gallery img").lazyload({
 		effect : "fadeIn",
 		threshold : 1000
@@ -26,7 +25,7 @@ $(document).ready(function() {
 		$(this).css("opacity", "1");
 	}, function() {
 		$(".gallery a").css("opacity", "1");
-	});*/
+	});
 
 	var wall = new freewall(".gallery");
 	wall.reset({

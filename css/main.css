@@ -264,11 +264,16 @@ body textarea:required:valid {
 	margin: 5px 5px 55px 55px;
 	color: #ffffff;
 	left: 0;
+	-webkit-transition: all .9s;
+	-moz-transition: all .9s;
+	-o-transition: all .9s;
+	transition: all .9s;
 }
 
 .gallery a {
 	overflow: hidden;
 	width: 320px;
+	min-height: 50px;
 	display: block;
 }
 
@@ -277,8 +282,14 @@ body textarea:required:valid {
 	max-width: 100%;
 }
 
-
-
+.left_side.active + .content {
+	left: 250px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	transition-delay: .5s;
+}
 
 
 
