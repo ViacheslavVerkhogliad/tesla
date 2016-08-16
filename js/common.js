@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 
 
-
+/*
 	$(".gallery img").lazyload({
 		effect : "fadeIn",
 		threshold : 1000
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		$(this).css("opacity", "1");
 	}, function() {
 		$(".gallery a").css("opacity", "1");
-	});
+	});*/
 
 	var wall = new freewall(".gallery");
 	wall.reset({
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		wall.fitWidth();
 	});
 
-	$(".filter_label").click(function() {
+/*	$(".filter_label").click(function() {
 		$(".filter_label").removeClass("active");
 		var filter = $(this).addClass("active").data("filter");
 		wall.filter(filter);
@@ -54,7 +54,7 @@ $(document).ready(function() {
 			$(window).resize();
 			wall.fitWidth();
 		}, 400);
-	});
+	});*/
 
 	$(".gallery a").magnificPopup({
 		type : 'image',

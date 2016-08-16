@@ -37,6 +37,7 @@ body textarea:required:valid {
 	-moz-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
+	outline: none;
 }
 
 .left_side.active {
@@ -182,6 +183,9 @@ body textarea:required:valid {
 
 /*icons*/
 
+.left_side.active .aside_content li:hover a {
+	text-indent: 5px;
+}
 .left_side.active .aside_content li a::before {
 	margin-left: -38px;
 }
@@ -199,7 +203,7 @@ body textarea:required:valid {
 }
 
 .aside_content li a::before {
-	font-family: "linea-basic-10";
+	font-family: "linea-basic-10", sans-serif;
 	font-size: 25px;
 	line-height: 0;
 	margin-top: -4px;
@@ -255,8 +259,23 @@ body textarea:required:valid {
 }
 
 
+.content {
+	position: relative;
+	margin: 5px 5px 55px 55px;
+	color: #ffffff;
+	left: 0;
+}
 
+.gallery a {
+	overflow: hidden;
+	width: 320px;
+	display: block;
+}
 
+.gallery img {
+	display: block;
+	max-width: 100%;
+}
 
 
 
