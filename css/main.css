@@ -7,7 +7,7 @@ body {
 	line-height: 1.7;
 	-webkit-font-smoothing: antialised;
 	overflow-x: hidden; /*скрывает горизонтальный scroll*/
-	background-color: #181818; /**/
+	background-color: #181818;
 }
 
 body input:focus:required:invalid,
