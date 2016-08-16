@@ -92,7 +92,16 @@ body textarea:required:valid {
 
 .btn_mnu {
 	float: right;
+	-webkit-transition:  all .5s;
+	-moz-transition:  all .5s;
+	-o-transition: all .5s;
+	transition:  all .5s;
 }
+
+.btn_mnu.active {
+	background-color: transparent;
+}
+
 /* END Button menu*/
 
 
@@ -107,11 +116,12 @@ body textarea:required:valid {
 .user_info {
 	text-align: center;
 	opacity: 0;
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all .1s;
+	-moz-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
 	white-space: nowrap;
+	transition-delay: .1s;
 }
 
 .left_side.active .user_info {
@@ -135,14 +145,85 @@ body textarea:required:valid {
 	color: #434343;
 }
 
+.aside_content nav {
+	margin: 35px 0;
+	position: relative;
+	z-index: 5;
+}
+.aside_content ul,
+.aside_content li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
 
+.aside_content li a:first-child {
+	border-top: #1f1f1f 1px solid;
+}
+.aside_content li a {
+	color: #858585;
+	display: block;
+	padding: 10px 0 10px 70px;
+	border-bottom: #1f1f1f 1px solid;
+	white-space: nowrap;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	outline: none;
+}
 
+.aside_content li a:hover {
+	text-decoration: none;
+	background-color: tomato;
+	color: #ffffff;
 
+}
 
+/*icons*/
 
+.left_side.active .aside_content li a::before {
+	margin-left: -38px;
+}
 
+.left_side .aside_content nav {
+	margin-top: -149px;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	-o-transition: all .6s;
+	transition: all .6s;
+}
 
+.left_side.active .aside_content nav {
+	margin-top: 35px;
+}
 
+.aside_content li a::before {
+	font-family: "linea-basic-10";
+	font-size: 25px;
+	line-height: 0;
+	margin-top: -4px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -59px;
+	margin-right: 14px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.aside_content li:nth-child(1) a::before {
+	content: "u";
+}
+.aside_content li:nth-child(2) a::before {
+	content: "{";
+}
+.aside_content li:nth-child(3) a::before {
+	content: "R";
+}
+
+/*END icons*/
 
 
 
