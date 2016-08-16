@@ -311,4 +311,58 @@ body textarea:required:valid {
 	text-align: right;
 	width: 100%;
 	padding: 10px 10px 0;
+	background-color: #181818;
 }
+
+
+.filter_label {
+	background-color: transparent;
+	/*border-color: #fff;*/
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	padding: 5px 15px;
+	opacity: .4;
+	margin: 0 1px 15px;
+	font-size: 13px;
+	letter-spacing: 3px;
+	border: 1px #ffffff  solid;
+}
+
+.filter_label:hover,
+.filter_label.active
+{
+	background-color: tomato;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
