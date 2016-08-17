@@ -5,7 +5,7 @@ $(document).ready(function() {
 		"verge" : "500"
 	});
 
-	$(".gallery").css("min-height", $(document).height()*1.1);
+
 
 	$(".btn_mnu").click(function() {
 		$(this).toggleClass("active");
@@ -60,11 +60,18 @@ $(document).ready(function() {
 		gallery : {
 			enabled : true
 		},
-		removalDelay: 400,
+		removalDelay: 300,
 		mainClass: 'mfp-fade'
-	}).click(function() {
-		$("button.mfp-arrow").delay(1000).fadeIn();
 	});
+
+
+
+
+
+
+
+
+
 
 
 
@@ -92,14 +99,14 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				
+
 			}, 1000);
 		});
 		return false;
 	});
 
 
-	
+
 });
 
 $(window).load(function() {
@@ -108,3 +115,5 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 
 });
+
+
