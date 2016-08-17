@@ -348,11 +348,18 @@ body textarea:required:valid {
 	right: 8px;
 	top: 3px;
 }
-
 /*END close button*/
+
+.mfp-figure {
+	background-color: #181818;
+}
 
 .mfp-content {
 	width: 100%;
+}
+
+.mfp-container.mfp-s-ready.mfp-image-holder {
+	background-color: #181818;
 }
 
 .mfp-container {
@@ -360,34 +367,46 @@ body textarea:required:valid {
 }
 
 /* magnific library opened */
-.mfp-zoom-out-cur .library {
+.mfp-zoom-out-cur .gallery {
 
+}
+
+.mfp-zoom-out-cur .gallery{
+	left: -100%;
+/*	-webkit-transitioall: 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;*/
 }
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
-
+	opacity: 1;
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-
+	opacity: 1;
 }
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
-
+	opacity: 1;
 }
 
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
-
+	left: 100%;
+	-webkit-transitioall: 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
 }
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-
+	left: 0;
 }
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-
+	left: 100%;
 }
 
 
