@@ -337,6 +337,19 @@ body textarea:required:valid {
 	opacity: 1;
 }
 
+/*close button*/
+.mfp-figure button.mfp-close {
+	width: 50px;
+	height: 50px;
+	background-color: tomato;
+	position: fixed;
+	padding: 0;
+	text-align: center;
+	right: 8px;
+	top: 3px;
+}
+
+/*END close button*/
 
 .mfp-content {
 	width: 100%;
