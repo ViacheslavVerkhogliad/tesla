@@ -342,6 +342,10 @@ body textarea:required:valid {
 	width: 100%;
 }
 
+.mfp-container {
+	padding: 0;
+}
+
 /* magnific library opened */
 .mfp-zoom-out-cur .library {
 
