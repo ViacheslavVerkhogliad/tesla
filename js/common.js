@@ -5,7 +5,7 @@ $(document).ready(function() {
 		"verge" : "500"
 	});
 
-
+	$(".gallery").css("min-height", $(document).height()*1);
 
 	$(".btn_mnu").click(function() {
 		$(this).toggleClass("active");
